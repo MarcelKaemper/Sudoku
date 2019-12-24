@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sudoku Solver</title>
+    </head>
+    <body>
+        <input type="file" id="file" name="file">
+        <div class="field">
+        </div>
+    </body>
+    <script src="createTable.js"></script>
+    <script src="parse.js"></script>
+    <script>
+        document.getElementById("file").addEventListener('change', parse, false)
+    </script>
+</html>
