@@ -1,0 +1,31 @@
+table {
+    width: 30%;
+}
+
+td {
+    vertical-align: middle;
+    text-align: center;
+    width: 11.11%;
+    height: 10px;
+    position: relative;
+}
+td:after {
+    content: '';
+    display: block;
+    margin-top: 100%;
+}
+td .cell {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} 
+
+table {
+    border: 2px solid black;
+}
+
+tr {
+    border-top: 1px solid black;
+}
