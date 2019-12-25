@@ -5,19 +5,17 @@ const parse = (evt) => {
     reader.readAsText(file);
 
     reader.onload = () => {
-        // console.log(reader.result);
         let res = reader.result;
+        // Replace newline characters
         res = res.replace(/[\r\n]+/gm, "");
-        // for(let x = 0; x<res.length; x++){
-        //     console.log(res.charAt(x));
-            // let ch = res.charAt(x);
+        res = res.replace(/[x]/gm, " ");
+
         for(let i = 0; i<9; i++){ 
             let row = document.getElementsByClassName("row"+i)[0];
             for(let j = 0; j<9; j++){ 
-                console.log(j);
-                row.childNodes.item(j).innerHTML = res.charAt((i*9)+j);
+                let cell = row.childNodes.item(j);
+                cell.childNodes.item(0).innerHTML = res.charAt((i*9)+j);
             }
         }
-        // }
     }
 }
