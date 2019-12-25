@@ -7,7 +7,10 @@ for(let i = 0; i<9; i++){
     tr.setAttribute("class", "row"+i)
     for(let j = 0; j<9; j++){
         let td = document.createElement("td");
-        td.setAttribute("class", "col"+j)
+        td.setAttribute("class", "col col"+j)
+        let div = document.createElement("div");
+        div.setAttribute("class", "cell");
+        td.appendChild(div);
         tr.appendChild(td);
     }
     tbl.appendChild(tr);
