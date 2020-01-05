@@ -17,5 +17,6 @@ const parse = (evt) => {
                 cell.childNodes.item(0).innerHTML = res.charAt((i*9)+j);
             }
         }
+        solve();
     }
 }
