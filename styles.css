@@ -1,5 +1,9 @@
+.red {
+    background-color: red;
+}
 table {
     width: 30%;
+    border-collapse: collapse;
 }
 
 td {
@@ -28,4 +32,13 @@ table {
 
 tr {
     border-top: 1px solid black;
+}
+
+.col2, .col5 {
+    border-right: 3px solid black;
+}
+
+.row2, .row5 {
+    border-collapse: collapse;
+    border-bottom: 3px solid black;
 }
